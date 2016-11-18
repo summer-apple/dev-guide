@@ -20,8 +20,8 @@
     - branch
     - checkout
     - merge
-    
-    
+
+
 - IDEA: [IDEA官方入门指南][idea]
 
 - Maven:
@@ -89,13 +89,15 @@ index.jsp
 
 ### 4.数据库
 
-  +------+-------+
-  |表|t_example|
-  |视图|t_example|
-  |存储过程|t_example|
-  +------+-------+
 
-[TOC]
+|类型|示例名称|
+| ------ | --------- |
+|表|t_name|
+|视图|v_name|
+|存储过程|p_name|
+|单词字段|name|
+|多词字段|user_type|
+
 
 ``` python
 @requires_authorization
@@ -115,5 +117,5 @@ class SomeClass:
 [git]: http://www.bootcss.com/p/git-guide/  "git指南"
 [idea]: http://www.jianshu.com/p/24efaf33dcd3 "idea指南"
 [maven]: http://www.jianshu.com/p/ede040d8ab0f "maven指南"
-[markdown]: http://www.jianshu.com/p/fdb5cbdaf244 "markdown指南"
+[markdown]: http://www.jianshu.com/p/1e402922ee32 "markdown指南"
 [atom]: https://atom.io/ "atom下载"
