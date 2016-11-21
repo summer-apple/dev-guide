@@ -28,14 +28,14 @@
   - [Maven入门][maven]
   - 添加阿里云镜像，cp <maven_path>/conf/setting.xml ~/.m2/ 并将以下代码加入文件的
   `<mirrors></mirrors>`标签之间
-
+  ```xml
         <mirror>
           <id>alimaven</id>
           <name>aliyun maven</name>
           <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
           <mirrorOf>central</mirrorOf>
         </mirror>
-
+  ```
 
 
 
@@ -80,10 +80,10 @@ index.jsp
 
 
 ### 3.交互
-1. 命名规范
+- 命名规范
 
-2. 调用规范
-3.
+- 调用规范
+
 
 
 
@@ -91,7 +91,7 @@ index.jsp
 
 
 |类型|示例名称|
-| ------ | --------- |
+| ------ | -------- |
 |表|t_name|
 |视图|v_name|
 |存储过程|p_name|
