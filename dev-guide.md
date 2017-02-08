@@ -4,6 +4,7 @@
   - 公司GIT地址：git@192.168.17.180:/data/git/项目名.git
   - JAVA WEB 通用模板地址：git@192.168.17.180:/data/git/template.git
   - 公司FTP地址：
+  - 免密登录：ssh-keygen -t rsa 
 
 
 
@@ -22,19 +23,21 @@
     - merge
 
 
+
 - IDEA: [IDEA官方入门指南][idea]
 
 - Maven:
   - [Maven入门][maven]
   - 添加阿里云镜像，cp <maven_path>/conf/setting.xml ~/.m2/ 并将以下代码加入文件的
   `<mirrors></mirrors>`标签之间
-  ```xml
-        <mirror>
-          <id>alimaven</id>
-          <name>aliyun maven</name>
-          <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-          <mirrorOf>central</mirrorOf>
-        </mirror>
+
+  ``` xml
+  <mirror>
+    <id>nexus</id>
+    <mirrorOf>*</mirrorOf>
+    <url>http://192.168.17.180:8081/nexus/content/groups/public</url>
+  </mirror>
+
   ```
 
 
@@ -99,18 +102,6 @@ index.jsp
 |多词字段|user_type|
 
 
-``` python
-@requires_authorization
-def somefunc(param1='', param2=0):
-    '''A docstring'''
-    if param1 > param2: # interesting
-        print 'Greater'
-    return (param2 - param1 + 1) or None
-class SomeClass:
-    pass
->>> message = '''interpreter
-... prompt'''
-```
 
 
 
